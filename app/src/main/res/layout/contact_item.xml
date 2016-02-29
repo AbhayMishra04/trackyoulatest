@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip">
+
+    <ImageView
+        android:id="@+id/contactIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dip"
+        android:contentDescription="TODO"
+        android:src="@drawable/user_add" />
+
+    <LinearLayout
+        android:id="@+id/layout_contactNaNo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/contactIcon"
+        android:layout_marginStart="@dimen/margin_small"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_contactName"
+            android:layout_width="match_parent"
+            android:layout_height="26dip"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Description"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_contactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="26dip"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Description"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/textView_onMapStatus"
+        android:layout_width="16dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dip"
+        android:layout_toRightOf="@id/layout_contactNaNo"
+        android:contentDescription="TODO"
+        android:src="@drawable/user_add" />
+
+</RelativeLayout>
